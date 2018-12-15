@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--带文本的标签自动生成font标签-->
+<!--后来发现是因为html在申明的时候是这样写的<html lang="en">，
+导致浏览器自动去翻译这个页面，翻译的过程中会自动的给所有的文本套上font标签.
+解决方法：1.去掉lang="en" 2.改成 lang=“zh”-->
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>聊天机器人</title>
+    <link rel="stylesheet" href="聊天机器人.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="con">
+            <p class="name">微软小冰</p>
+            <div class="chat-box">
+                <div class="inner"></div>
+            </div>
+            <div class="input-box">
+                <input type="text" class="inp">
+                <input type="button" class="btn" value="发送">
+            </div>
+        </div>
+    </div>
+<script src="jquery.js"></script>
+<script src="（CORS跨域）聊天机器人.js"></script>
+</body>
+</html>
